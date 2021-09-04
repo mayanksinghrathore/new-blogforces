@@ -11,7 +11,7 @@ import CreatePost from "../views/CreatePost.vue";
 import BlogPreview from "../views/BlogPreview.vue";
 import ViewBlog from "../views/ViewBlog.vue";
 import EditBlog from "../views/EditBlog.vue";
-import  firebase from "firebase/app";
+import firebase from "firebase/app";
 import "firebase/auth";
 
 Vue.use(VueRouter);
@@ -88,7 +88,6 @@ const routes = [
     meta: {
       title: "Create Post",
       requiresAuth: true,
-      requiresAdmin: true,
     },
   },
   {
@@ -98,7 +97,6 @@ const routes = [
     meta: {
       title: "Preview Blog Post",
       requiresAuth: true,
-      requiresAdmin: true,
     },
   },
   {
@@ -117,7 +115,6 @@ const routes = [
     meta: {
       title: "Edit Blog Post",
       requiresAuth: true,
-      requiresAdmin: true,
     },
   },
 ];

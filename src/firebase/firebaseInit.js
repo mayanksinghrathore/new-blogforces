@@ -1,13 +1,13 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBb2JzPG_4Fc1t1EEwuNpPgKNGnhEbSmtA",
-  authDomain: "fir-code-lab-6c10d.firebaseapp.com",
-  projectId: "fir-code-lab-6c10d",
-  storageBucket: "fir-code-lab-6c10d.appspot.com",
-  messagingSenderId: "650085428222",
-  appId: "1:650085428222:web:a48b2e084f51f8cf5d6eaf"
+var firebaseConfig = {
+  apiKey: "AIzaSyAZodEHTznZlwiRnQLddYWZ2QxVv7djHhE",
+  authDomain: "blogs-bc6a8.firebaseapp.com",
+  projectId: "blogs-bc6a8",
+  storageBucket: "blogs-bc6a8.appspot.com",
+  messagingSenderId: "855333541231",
+  appId: "1:855333541231:web:0480c28a1dfba65303049a"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

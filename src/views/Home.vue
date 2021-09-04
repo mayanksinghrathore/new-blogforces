@@ -12,8 +12,8 @@
     </div>
     <div v-if="!user" class="updates">
       <div class="container">
-        <h2>never miss a post. Register for your free account today!</h2>
-        <router-link class="router-button" to="#"> Register for FireBlogs <Arrow class="arrow arrow-light" /> </router-link>
+        <h2>Write your experience and let them become a candle in darkness of other people's life.</h2>
+        <router-link class="router-button" to="#"> Register for feel write <Arrow class="arrow arrow-light" /> </router-link>
       </div>
     </div>
   </div>
@@ -29,9 +29,9 @@ export default {
   data() {
     return {
       welcomeScreen: {
-        title: "Welcome!",
+        title: "Write what you feel. Share your experience with the world and stay anonymous. JUST FEEL WRITE.",
         blogPost:
-          "Weekly blog articles with all things programming including HTML, CSS, JavaScript and more. Register today to never miss a post!",
+          "Weekly blog articles. Your experience may guide someone cause everyone has a different story to inspire.",
         welcomeScreen: true,
         photo: "coding",
       },

@@ -2,13 +2,13 @@
   <header>
     <nav class="container">
       <div class="branding">
-        <router-link class="header" :to="{ name: 'Home' }">FireBlogs</router-link>
+        <router-link class="header" :to="{ name: 'Home' }">Feel write</router-link>
       </div>
       <div class="nav-links">
         <ul v-show="!mobile">
           <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
           <router-link class="link" :to="{ name: 'Blogs' }">Blogs</router-link>
-          <router-link v-if="admin" class="link" :to="{ name: 'CreatePost' }">Create Post</router-link>
+          <router-link  class="link" :to="{ name: 'CreatePost' }">Create Post</router-link>
           <router-link v-if="!user" class="link" :to="{ name: 'Login' }">Login/Register</router-link>
         </ul>
         <div v-if="user" :class="{ 'mobile-user-menu': mobile }" @click="toggleProfileMenu" class="profile" ref="profile">
@@ -29,15 +29,15 @@
                   <p>Profile</p>
                 </router-link>
               </div>
-              <div v-if="admin" class="option">
-                <router-link class="option" :to="{ name: 'Admin' }">
-                  <adminIcon class="icon" />
-                  <p>Admin</p>
-                </router-link>
-              </div>
               <div @click="signOut" class="option">
                 <signOutIcon class="icon" />
                 <p>Sign Out</p>
+              </div>
+               <div class="option">
+                <router-link class="option" :to="{ name: 'Admin' }">
+                  <adminIcon class="icon" />
+                  <!--<p>Admin</p>-->
+                </router-link>
               </div>
             </div>
           </div>
@@ -49,7 +49,7 @@
       <ul class="mobile-nav" v-show="mobileNav">
         <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
         <router-link class="link" :to="{ name: 'Blogs' }">Blogs</router-link>
-        <router-link v-if="admin" class="link" :to="{ name: 'CreatePost' }">Create Post</router-link>
+        <router-link class="link" :to="{ name: 'CreatePost' }">Create Post</router-link>
         <router-link v-if="!user" class="link" :to="{ name: 'Login' }">Login/Register</router-link>
       </ul>
     </transition>
@@ -124,7 +124,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-color: #fff;
+  background-color: rgb(106, 178, 190);
   padding: 0 25px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   z-index: 99;

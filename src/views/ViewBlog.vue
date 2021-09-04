@@ -14,7 +14,7 @@ export default {
   name: "ViewBlog",
   data() {
     return {
-      currentBlog: null,
+      currentBlog: true,
     };
   },
   async mounted() {
