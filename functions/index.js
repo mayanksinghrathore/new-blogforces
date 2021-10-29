@@ -1,9 +1,9 @@
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
-admin.initializeApp();
+admin.initializeApp();//initialize function
 
 exports.addAdminRole = functions.https.onCall((data, context) => {
-  return admin
+  return admin//it returns admin
     .auth()
     .getUserByEmail(data.email)
     .then((user) => {
@@ -17,6 +17,6 @@ exports.addAdminRole = functions.https.onCall((data, context) => {
       };
     })
     .catch((err) => {
-      console.log(err);
+      console.log(err);//it prints message
     });
 });
