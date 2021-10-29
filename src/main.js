@@ -8,7 +8,7 @@ import "firebase/auth";
 
 Vue.use(Vue2Editor);
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false;//main authorization work from firebase
 
 let app;
 firebase.auth().onAuthStateChanged(() => {
