@@ -7,7 +7,7 @@
         <div class="input">
           <input placeholder="Enter user email to make them an admin" type="text" id="addAdmins" v-model="adminEmail" />
         </div>
-        <span>{{ this.functionMsg }}</span>
+        <span>{{ this.functionMsg }}</span>//waits for method to return
         <button @click="addAdmin" class="button">Submit</button>
       </div>
     </div>
