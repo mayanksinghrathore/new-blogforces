@@ -12,3 +12,4 @@ module.exports = {
       .loader("vue-svg-loader");
   },
 };
+//main javascript file
